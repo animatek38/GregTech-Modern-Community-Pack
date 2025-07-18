@@ -2,22 +2,17 @@
 
 Repository for the Modern fork of the GregTech Community Modpack - a minecraft modpack for 1.20.1 highlighting and featuring [GregTech Community Edition Unofficial Modern](https://github.com/GregTechCEu/GregTech-Modern).
 
-## Playing
+This repo is to provide a docker image for the server
 
-The modpack is available on [Curseforge](https://legacy.curseforge.com/minecraft/modpacks/gregtech-community-pack-modern).
+## Running the server
 
-## Building
+The docker image is available at `animatek/gregtech-modern-community-pack`
 
-[packwiz](https://packwiz.infra.link/) will allow you to build either a server or client pack.
-Please refer to their tutorials page for more info.
+with docker run:
+```bash
+docker run  -v /path/to/the/permanent/files:/data animatek/gregtech-modern-community-pack:latest
+```
 
-## Server
-
-`serverpack/start.sh` is useful for starting a server on linux, mac or another \*nix flavor. It will also handle procuring the files for you.
-
-`serverpack/start.ps1` is the Powershell 7.4 version and will be the script windows users want to use.<br>
-If your system is missing Powershell version 7.4 (or greater) please refer to the installation instructions provided
-by Microsoft [here](https://learn.microsoft.com/en-us/powershell/scripting/install/installing-powershell-on-windows?view=powershell-7.4).
 
 ## Credits
 
